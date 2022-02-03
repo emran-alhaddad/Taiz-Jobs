@@ -86,107 +86,148 @@ header {
 }
 
 
-/*--------------------Style for Browse Job----------------------*/
+/*----------------------------Features Style-------------------------*/
 
-.jobs .row {
-    margin: 0;
-}
-
-.heading {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.heading h2 {
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.heading p {
-    font-weight: 300;
-    font-size: 17px;
-}
-
-.companies {
-    margin-top: 30px;
-}
-
-.company-logo {
-    display: table;
-    width: 100%;
-}
-
-.company-logo img {
-    margin: 0 auto;
-    max-width: 100px
-}
-
-.company-content {}
-
-.company-content h3 {
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 10px;
-    margin-top: 7px;
-}
-
-.company-content h3 span {
-    font-size: 13px;
-    padding: 2px 20px;
-    float: right;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 5px;
-    display: inline-block;
-    line-height: 1.7;
-    border-radius: 2px;
-}
-
-.company-content p span {
-    font-size: 15px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-.company-content p span i {
-    font-size: 15px;
-    margin-right: 5px;
-}
-
-.company-list {
-    background: #ffffff;
-    margin: 12px 0;
-    padding: 12px 0 12px 0;
+.features-content {
     border: 1px solid #f4f5f7;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(107, 121, 124, 0.2);
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
     box-shadow: 0px 0px 10px 0px rgba(107, 121, 124, 0.2);
 }
 
-.company-content h3 .full-time {
-    background: #1ec715;
+.features-content h3 {
+    font-weight: 400;
+    color: #475052;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
-.company-content h3 .freelance {
-    background: #01b5ff;
+.features-content p {
+    font-weight: 300;
+    color: #6b797c;
+    line-height: 1.8;
+    font-size: 14px;
 }
 
-.company-content h3 .internship {
-    background: #cc68f3;
+.features-content span {
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #da0833;
 }
 
-.company-content h3 .part-time {
-    background: #ff8f3e;
+
+/*---------------------Membrcard---------------*/
+
+.card-widget {
+    background-color: #fff;
+    border-color: #d7dfe3;
+    border: none;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(107, 121, 124, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(107, 121, 124, 0.2);
+    border-radius: 6px;
+    text-align: center;
+    overflow: hidden;
+    transition: .7s;
+    margin-bottom: 30px;
 }
 
-.brows-btn {
+.user-card .u-img {
+    margin-bottom: -42px;
+    height: 150px;
+}
+
+.user-card .u-content {
+    padding: 0 1.25rem 1.25rem;
+}
+
+.user-card .avatar {
+    margin: 0 auto 2rem auto;
+    position: relative;
+    display: block;
+    max-width: 85px;
+}
+
+.avatar.box-80 i {
+    position: absolute;
+    bottom: -6px;
+    left: 37px;
+    color: #07b107;
+}
+
+.u-content h5 {
+    font-size: 18px;
+    color: #242c36;
+    margin-bottom: 5px;
+}
+
+.text-muted {
+    margin-bottom: 5px;
+}
+
+.user-social-profile {
+    padding: 5px 0 25px 0;
+}
+
+.user-social-profile ul {
+    padding: 0;
+    margin: 0;
+}
+
+.user-social-profile ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.user-social-profile ul li a i {
+    background: rgba(99, 110, 123, 0.1);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 17px;
+    border-radius: 50%;
+    color: #636e7b;
+}
+
+.user-social-profile ul li a i:hover,
+.user-social-profile ul li a i:focus {
     background: #da0833;
     color: #ffffff;
-    text-transform: uppercase;
-    font-size: 16px;
-    display: table;
-    text-shadow: none;
-    line-height: 1.2;
-    margin: 20px auto;
+}
+
+
+/*-----------------------counter Section start-------------------------*/
+
+.counter {
+    background: #da0833;
+    padding: 60px 0;
+}
+
+.counter-text {
+    text-align: center;
+    color: #ffffff;
+}
+
+.counter-text h3 {
+    color: #ffffff;
     font-weight: 400;
-    padding: 14px 25px;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.counter-text p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.counter-text span {
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
 }
