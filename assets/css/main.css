@@ -5,6 +5,10 @@ header {
     border-radius: 2%;
 }
 
+.btn {
+    width: max-content;
+}
+
 
 /*===========================
     clients-01 css 
