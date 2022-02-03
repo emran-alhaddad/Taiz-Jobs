@@ -1,0 +1,192 @@
+header {
+    z-index: 9999;
+    box-shadow: 0 0 17px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 2%;
+}
+
+
+/*===========================
+    clients-01 css 
+===========================*/
+
+.client-logo-area .section-title-two {
+    text-align: center;
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .client-logo-area .section-title-two {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .client-logo-area .section-title-two {
+        margin-bottom: 35px;
+    }
+}
+
+.client-logo-area .section-title-two span {
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--primary);
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.client-logo-area .section-title-two h2 {
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .client-logo-area .section-title-two h2 {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .client-logo-area .section-title-two h2 {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+}
+
+.client-logo-area .section-title-two p {
+    color: var(--dark-3);
+}
+
+
+/*===== Client Logo One =====*/
+
+.client-logo-one {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.client-logo-one .single-client {
+    margin-top: 30px;
+}
+
+.job-item {
+    border-radius: 10px 0;
+    box-shadow: 0 2px 4px;
+}
+
+.page-header {
+    background: linear-gradient(rgba(43, 57, 64, .5), rgba(43, 57, 64, .5)), url(../images/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/*--------------------Style for Browse Job----------------------*/
+
+.jobs .row {
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.companies {
+    margin-top: 30px;
+}
+
+.company-logo {
+    display: table;
+    width: 100%;
+}
+
+.company-logo img {
+    margin: 0 auto;
+    max-width: 100px
+}
+
+.company-content {}
+
+.company-content h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+.company-content h3 span {
+    font-size: 13px;
+    padding: 2px 20px;
+    float: right;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 5px;
+    display: inline-block;
+    line-height: 1.7;
+    border-radius: 2px;
+}
+
+.company-content p span {
+    font-size: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.company-content p span i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.company-list {
+    background: #ffffff;
+    margin: 12px 0;
+    padding: 12px 0 12px 0;
+    border: 1px solid #f4f5f7;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(107, 121, 124, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(107, 121, 124, 0.2);
+}
+
+.company-content h3 .full-time {
+    background: #1ec715;
+}
+
+.company-content h3 .freelance {
+    background: #01b5ff;
+}
+
+.company-content h3 .internship {
+    background: #cc68f3;
+}
+
+.company-content h3 .part-time {
+    background: #ff8f3e;
+}
+
+.brows-btn {
+    background: #da0833;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: table;
+    text-shadow: none;
+    line-height: 1.2;
+    margin: 20px auto;
+    font-weight: 400;
+    padding: 14px 25px;
+}

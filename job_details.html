@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs Website</title>
+    <link href="assets/fonts/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/login_signup_style.css">
+
+</head>
+
+<body>
+
+    <header class="position-sticky top-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 me-3" href="index.html"> <span class="text-danger">Taiz</span> Jobs</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto text-center mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="jobs.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Jobs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="jobs.html">Jobs List</a></li>
+                                <li><a class="dropdown-item" href="job_details.html">Job Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="our_services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="our_services.html">Service List</a></li>
+                                <li><a class="dropdown-item" href="parteners_and_companies.html">Companies List</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about_us.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="d-flex m-lg-2 flex-column flex-lg-row gap-2 mb-3 m-sm-3">
+                        <button type="button" class="btn btn-outline-secondary rounded-pill" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                            <i class="fa fa-user me-2 "></i>SignUp </button>
+
+                        <button type="button" class="btn btn-danger rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fa fa-sign-in-alt me-2  "></i> Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--  Start of Carousel -->
+
+    <div class="container-xxl py-5 bg-dark page-header mb-5 ">
+        <div class="container my-5 pt-5 pb-4 rounded-3 " style="background: #ffffff3d; box-shadow: 0 0 10px white;">
+            <h1 class="display-3 text-white mb-3">Jobs</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="jobs.html" class="text-white text-decoration-none">Jobs</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Job Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- End of Carousel -->
+
+    <div class="container-xxl py-5 ">
+        <div class="container">
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-8">
+                    <div class="d-flex align-items-center mb-5">
+                        <img class="flex-shrink-0 img-fluid border rounded" src="assets/images/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                        <div class="text-start ps-4">
+                            <h3 class="mb-3">Marketing Manager</h3>
+                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-danger me-2"></i>New York, USA</span>
+                            <span class="text-truncate me-3"><i class="far fa-clock text-danger me-2"></i>Full Time</span>
+                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-danger me-2"></i>$123 - $456</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h4 class="mb-3">Job description</h4>
+                        <p>Dolor justo tempor duo ipsum accusam rebum gubergren erat. Elitr stet dolor vero clita labore gubergren. Kasd sed ipsum elitr clita rebum ut sea diam tempor. Sadipscing nonumy vero labore invidunt dolor sed, eirmod dolore amet
+                            aliquyam consetetur lorem, amet elitr clita et sed consetetur dolore accusam. Vero kasd nonumy justo rebum stet. Ipsum amet sed lorem sea magna. Rebum vero dolores dolores elitr vero dolores magna, stet sea sadipscing stet
+                            et. Est voluptua et sanctus at sanctus erat vero sed sed, amet duo no diam clita rebum duo, accusam tempor takimata clita stet nonumy rebum est invidunt stet, dolor.</p>
+                        <h4 class="mb-3">Responsibility</h4>
+                        <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Dolor justo tempor duo ipsum accusam</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Elitr stet dolor vero clita labore gubergren</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Rebum vero dolores dolores elitr</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Est voluptua et sanctus at sanctus erat</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Diam diam stet erat no est est</li>
+                        </ul>
+                        <h4 class="mb-3">Qualifications</h4>
+                        <p>Magna et elitr diam sed lorem. Diam diam stet erat no est est. Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata at diam kasd gubergren elitr dolor</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Dolor justo tempor duo ipsum accusam</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Elitr stet dolor vero clita labore gubergren</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Rebum vero dolores dolores elitr</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Est voluptua et sanctus at sanctus erat</li>
+                            <li><i class="fa fa-angle-right text-danger me-2"></i>Diam diam stet erat no est est</li>
+                        </ul>
+                    </div>
+
+                    <div class="">
+                        <h4 class="mb-4">Apply For The Job</h4>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Portfolio Website">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="file" class="form-control bg-white">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Coverletter"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-danger w-100" type="submit">Apply Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <h4 class="mb-4">Job Summery</h4>
+                        <p><i class="fa fa-angle-right text-danger me-2"></i>Published On: 01 Jan, 2045</p>
+                        <p><i class="fa fa-angle-right text-danger me-2"></i>Vacancy: 123 Position</p>
+                        <p><i class="fa fa-angle-right text-danger me-2"></i>Job Nature: Full Time</p>
+                        <p><i class="fa fa-angle-right text-danger me-2"></i>Salary: $123 - $456</p>
+                        <p><i class="fa fa-angle-right text-danger me-2"></i>Location: New York, USA</p>
+                        <p class="m-0"><i class="fa fa-angle-right text-danger me-2"></i>Date Line: 01 Jan, 2045</p>
+                    </div>
+                    <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: slideInUp;">
+                        <h4 class="mb-4">Company Detail</h4>
+                        <p class="m-0">Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum sadipscing elitr vero dolores. Lorem dolore elitr justo et no gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum lorem diam. Et lorem magna eirmod est
+                            et et sanctus et, kasd clita labore.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <h3 class="text-start pb-2 mb-4  border-bottom border-danger wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">Related Jobs</h3>
+
+                <div class="fade show p-0 active">
+                    <div class="job-item p-4 mb-4">
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid border rounded" src="assets/images/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="text-start ps-4">
+                                    <h5 class="mb-3">Software Engineer</h5>
+                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-danger me-2"></i>New York, USA</span>
+                                    <span class="text-truncate me-3"><i class="far fa-clock text-danger me-2"></i>Full Time</span>
+                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-danger me-2"></i>$123 - $456</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                <div class="d-flex mb-3">
+                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-danger"></i></a>
+                                    <a class="btn btn-danger" href="">Apply Now</a>
+                                </div>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-danger me-2"></i>Date Line: 01 Jan, 2045</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-item p-4 mb-4">
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid border rounded" src="assets/images/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="text-start ps-4">
+                                    <h5 class="mb-3">Marketing Manager</h5>
+                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-danger me-2"></i>New York, USA</span>
+                                    <span class="text-truncate me-3"><i class="far fa-clock text-danger me-2"></i>Full Time</span>
+                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-danger me-2"></i>$123 - $456</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                <div class="d-flex mb-3">
+                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-danger"></i></a>
+                                    <a class="btn btn-danger" href="">Apply Now</a>
+                                </div>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-danger me-2"></i>Date Line: 01 Jan, 2045</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-item p-4 mb-4">
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid border rounded" src="assets/images/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="text-start ps-4">
+                                    <h5 class="mb-3">Product Designer</h5>
+                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-danger me-2"></i>New York, USA</span>
+                                    <span class="text-truncate me-3"><i class="far fa-clock text-danger me-2"></i>Full Time</span>
+                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-danger me-2"></i>$123 - $456</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                <div class="d-flex mb-3">
+                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-danger"></i></a>
+                                    <a class="btn btn-danger" href="">Apply Now</a>
+                                </div>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-danger me-2"></i>Date Line: 01 Jan, 2045</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-item p-4 mb-4">
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid border rounded" src="assets/images/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="text-start ps-4">
+                                    <h5 class="mb-3">Creative Director</h5>
+                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-danger me-2"></i>New York, USA</span>
+                                    <span class="text-truncate me-3"><i class="far fa-clock text-danger me-2"></i>Full Time</span>
+                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-danger me-2"></i>$123 - $456</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                <div class="d-flex mb-3">
+                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-danger"></i></a>
+                                    <a class="btn btn-danger" href="">Apply Now</a>
+                                </div>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-danger me-2"></i>Date Line: 01 Jan, 2045</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="job-item p-4 mb-4">
+                        <div class="row g-4">
+                            <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                <img class="flex-shrink-0 img-fluid border rounded" src="assets/images/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
+                                <div class="text-start ps-4">
+                                    <h5 class="mb-3">Wordpress Developer</h5>
+                                    <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-danger me-2"></i>New York, USA</span>
+                                    <span class="text-truncate me-3"><i class="far fa-clock text-danger me-2"></i>Full Time</span>
+                                    <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-danger me-2"></i>$123 - $456</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                <div class="d-flex mb-3">
+                                    <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-danger"></i></a>
+                                    <a class="btn btn-danger" href="">Apply Now</a>
+                                </div>
+                                <small class="text-truncate"><i class="far fa-calendar-alt text-danger me-2"></i>Date Line: 01 Jan, 2045</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal HTML -->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-login  ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <div class="avatar ">
+                        <img src="assets/images/avatar.png " alt="Avatar ">
+                    </div>
+                    <h4 class="modal-title mt-5 mb-3 text-center border-1 border-bottom">Member Login</h4>
+                    <button type="button " class="btn-close close " data-bs-dismiss="modal" aria-bs-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form action=" " method="post " class="was-validated">
+                        <div class="form-group mb-4 position-relative">
+                            <label for="validationTooltipUsername" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a unique and valid username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4 position-relative">
+                            <label for="validationTooltipPassword" class="form-label">Password</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="validationTooltipPasswordPrepend">
+                                    *
+                                </span>
+                                <input type="password" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipPasswordPrepend" required>
+                                <div class="invalid-feedback">
+                                    Type Valid Password.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-5 ">
+                            <button type="submit " class="btn btn-danger rounded-pill w-100 mb-1">
+                                <li class="fab fa-sign-in-alt text-light"></li>
+                                Login</button>
+                            <button type="button " data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signUpModal" class="btn btn-outline-secondary rounded-pill w-100">
+                            <li class="fab fa-user-alt"></li>SignUp</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer ">
+                    <a href=" # ">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signUpModal">
+        <div class="modal-dialog modal-login ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <div class="avatar ">
+                        <img src="assets/images/avatar.png " alt="Avatar ">
+                    </div>
+                    <h4 class="modal-title mt-5 mb-3 text-center border-1 border-bottom">Member SignUp</h4>
+                    <button type="button " class="btn-close close " data-bs-dismiss="modal" aria-bs-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <form action=" " method="post " class="was-validated">
+                        <div class="form-group mb-4 position-relative">
+                            <label for="validationTooltipPassword" class="form-label">Email</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="validationTooltipEmailPrepend">
+                                    @
+                                </span>
+                                <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipEmailPrepend" required>
+                                <div class="invalid-feedback">
+                                    Type Valid Email.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4 position-relative">
+                            <label for="validationTooltipUsername" class="form-label">Username</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a unique and valid username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4 position-relative">
+                            <label for="validationTooltipPassword" class="form-label">Password</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="validationTooltipPasswordPrepend">
+                                    *
+                                </span>
+                                <input type="password" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipPasswordPrepend" required>
+                                <div class="invalid-feedback">
+                                    Type Valid Password.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-5 ">
+                            <button type="button " data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signUpModal" class="btn btn-outline-secondary rounded-pill w-100">
+                                <li class="fab fa-user"></li>SignUp</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer ">
+                    <a href=" # " data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">has account?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class=" container-fluid bg-dark text-white-50 footer pt-5 mt-5 ">
+            <div class=" container py-5 ">
+                <div class=" row g-5 ">
+                    <div class=" col-lg-3 col-md-6 ">
+                        <h5 class=" text-white mb-4 ">Company</h5>
+                        <a class=" btn btn-link text-white-50 " href=" ">About Us</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Contact Us</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Our Services</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Privacy Policy</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Terms &amp; Condition</a>
+                    </div>
+                    <div class=" col-lg-3 col-md-6 ">
+                        <h5 class=" text-white mb-4 ">Quick Links</h5>
+                        <a class=" btn btn-link text-white-50 " href=" ">About Us</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Contact Us</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Our Services</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Privacy Policy</a>
+                        <a class=" btn btn-link text-white-50 " href=" ">Terms &amp; Condition</a>
+                    </div>
+                    <div class=" col-lg-3 col-md-6 ">
+                        <h5 class=" text-white mb-4 ">Contact</h5>
+                        <p class=" mb-2 "><i class=" fa fa-map-marker-alt me-3 "></i>123 Street, New York, USA</p>
+                        <p class=" mb-2 "><i class=" fa fa-phone-alt me-3 "></i>+012 345 67890</p>
+                        <p class=" mb-2 "><i class=" fa fa-envelope me-3 "></i>info@example.com</p>
+                        <div class=" d-flex pt-2 ">
+                            <a class=" btn btn-outline-light btn-social " href=" "><i class=" fab fa-twitter "></i></a>
+                            <a class=" btn btn-outline-light btn-social " href=" "><i
+                                    class=" fab fa-facebook-f "></i></a>
+                            <a class=" btn btn-outline-light btn-social " href=" "><i class=" fab fa-youtube "></i></a>
+                            <a class=" btn btn-outline-light btn-social " href=" "><i
+                                    class=" fab fa-linkedin-in "></i></a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-6 ">
+                        <h5 class=" text-white mb-4 ">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class=" position-relative mx-auto " style=" max-width: 400px; ">
+                            <input class=" form-control bg-transparent w-100 py-3 ps-4 pe-5 " type=" text " placeholder=" Your email ">
+                            <button type=" button " class=" btn btn-danger py-2 position-absolute top-0 end-0 mt-2 me-2 ">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" container ">
+                <div class=" copyright ">
+                    <div class=" row ">
+                        <div class=" col-12 text-center mb-3 mb-md-0 ">
+                            © <a class=" navbar-brand fs-1 me-3 text-light " href=" # "><span
+                                    class=" text-danger ">Taiz</span> Jobs</a>, All Right Reserved. Designed By <a class=" text-danger " href=" # ">Emran AL-Haddad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts  -->
+    <script src=" assets/js/bootstrap.bundle.js "></script>
+
+</body>
+
+</html>
