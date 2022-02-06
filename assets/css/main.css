@@ -316,3 +316,10 @@ header {
     background: #dc3545;
     border: 5px double;
 }
+
+@media (min-width: 992px) {
+    #navbarSupportedContent,
+    #navbarSupportedContent ul {
+        margin-left: 3rem!important;
+    }
+}

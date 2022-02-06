@@ -15,6 +15,7 @@
 
     <link href="assets/css/dashboard_style.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
 
 </head>
 
@@ -112,246 +113,783 @@
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
-            <!-- Main Content -->
-            <div id="content">
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
 
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <!-- Main Content -->
+                <div id="content">
 
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <!-- Topbar -->
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Search -->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-danger" type="button">
+                        <!-- Topbar Search -->
+                        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-danger" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
 
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
 
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-danger" type="button">
+                            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                            <li class="nav-item dropdown no-arrow d-sm-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-search fa-fw"></i>
+                                </a>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto w-100 navbar-search">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-danger" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
                                             </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-bell fa-fw"></i>
+                                    <!-- Counter - Alerts -->
+                                    <span class="badge badge-danger badge-counter">3+</span>
+                                </a>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Alerts Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-danger">
+                                                <i class="fas fa-file-alt text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 12, 2019</div>
+                                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-success">
+                                                <i class="fas fa-donate text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 7, 2019</div>
+                                            $290.29 has been deposited into your account!
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-warning">
+                                                <i class="fas fa-exclamation-triangle text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small text-gray-500">December 2, 2019</div>
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </li>
+
+                            <!-- Nav Item - Messages -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-envelope fa-fw"></i>
+                                    <!-- Counter - Messages -->
+                                    <span class="badge badge-danger badge-counter">7</span>
+                                </a>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                                    <h6 class="dropdown-header">
+                                        Message Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle" src="assets/img/undraw_profile_1.svg" alt="...">
+                                            <div class="status-indicator bg-success"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, illo!</div>
+                                            <div class="small text-gray-500">Hamad Bakeel· 58m</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle" src="assets/img/undraw_profile_2.svg" alt="...">
+                                            <div class="status-indicator"></div>
+                                        </div>
+                                        <div>
+                                            <div class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore suscipit quis laborum!</div>
+                                            <div class="small text-gray-500">Fatima · 1d</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle" src="assets/img/undraw_profile_3.svg" alt="...">
+                                            <div class="status-indicator bg-warning"></div>
+                                        </div>
+                                        <div>
+                                            <div class="text-truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat a inventore ipsa voluptatem vero harum pariatur laboriosam dolorem et saepe.</div>
+                                            <div class="small text-gray-500">Ali Alroainy · 2d</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="dropdown-list-image mr-3">
+                                            <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
+                                            <div class="status-indicator bg-success"></div>
+                                        </div>
+                                        <div>
+                                            <div class="text-truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, voluptatibus molestiae nesciunt soluta ad, qui minima assumenda unde eius magnam vero culpa.</div>
+                                            <div class="small text-gray-500">Eng: Haifa · 2w</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                                </div>
+                            </li>
+
+                            <div class="topbar-divider d-none d-sm-block"></div>
+
+                            <!-- Nav Item - User Information -->
+                            <li class="nav-item dropdown no-arrow">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Emran Al Haddad</span>
+                                    <img class="img-profile rounded-circle" src="assets/img/myPhoto.jpg">
+                                </a>
+                                <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> My Profile
+                                    </a>
+
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Others Profile
+                                    </a>
+
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                    <!-- End of Topbar -->
+                    <!-- Begin Page Content -->
+
+
+                    <div class="container-fluid">
+                        <div class="row ">
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">GIT</h5>
+                                            <img src="assets/img/skills/git.jpg" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>97% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 97%;"></div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </li>
+                                    <!-- ---------------- arrow btn menue------------------  -->
 
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Alerts Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-danger">
-                                            <i class="fas fa-file-alt text-white"></i>
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!----- -->
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">GitHub</h5>
+                                            <img src="assets/img/skills/github.png" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>85% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+
+                                    <!-- ---------------- arrow btn menue------------------  -->
+
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
+
+                                    <!----- -->
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">HTML5</h5>
+                                            <img src="assets/img/skills/html.jpg" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>95% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
+
+                                    <!-- ---------------- arrow btn menue------------------  -->
+
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
+
+                                    <!----- -->
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">CSS3</h5>
+                                            <img src="assets/img/skills/css.png" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>90% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    <!-- ---------------- arrow btn menue------------------  -->
+
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+
+                                    <!----- -->
+                                </div>
                             </div>
-                        </li>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">JavaScript</h5>
+                                            <img src="assets/img/skills/js.jpg" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>80% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- ---------------- arrow btn menue------------------  -->
 
-                        <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">7</span>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/img/undraw_profile_1.svg" alt="...">
-                                        <div class="status-indicator bg-success"></div>
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, illo!</div>
-                                        <div class="small text-gray-500">Hamad Bakeel· 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/img/undraw_profile_2.svg" alt="...">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore suscipit quis laborum!</div>
-                                        <div class="small text-gray-500">Fatima · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="assets/img/undraw_profile_3.svg" alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat a inventore ipsa voluptatem vero harum pariatur laboriosam dolorem et saepe.</div>
-                                        <div class="small text-gray-500">Ali Alroainy · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, voluptatibus molestiae nesciunt soluta ad, qui minima assumenda unde eius magnam vero culpa.</div>
-                                        <div class="small text-gray-500">Eng: Haifa · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+
+                                    <!----- -->
+                                </div>
                             </div>
-                        </li>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">BootStrap</h5>
+                                            <img src="assets/img/skills/bootstrap.png" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>75% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- ---------------- arrow btn menue------------------  -->
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
 
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Emran Al Haddad</span>
-                                <img class="img-profile rounded-circle" src="assets/img/myPhoto.jpg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> My Profile
-                                </a>
-
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Others Profile
-                                </a>
-
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
-                                </a>
+                                    <!----- -->
+                                </div>
                             </div>
-                        </li>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">JQuery</h5>
+                                            <img src="assets/img/skills/JQuery.png" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>45% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                        </div>
+                                    </div>
 
-                    </ul>
+                                    <!-- ---------------- arrow btn menue------------------  -->
 
-                </nav>
-                <!-- End of Topbar -->
-                <!-- Begin Page Content -->
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!----- -->
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">MYSQL</h5>
+                                            <img src="assets/img/skills/mysql.jpg" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>97% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 97%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ---------------- arrow btn menue------------------  -->
+
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!----- -->
+
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6">
+                                <div class="card l-bg-cherry position-relative">
+                                    <div class="card-statistic-3 p-4">
+                                        <div class="card-icon card-icon-large"><i class="fas fa-shopping-cart"></i></div>
+                                        <div class="mb-4 text-center">
+                                            <h5 class="card-title mb-3">PHP</h5>
+                                            <img src="assets/img/skills/php.png" class="img-fluid w-75 rounded-circle" alt="">
+                                        </div>
+                                        <div class="row align-items-center mb-2 d-flex">
+                                            <div class="col-8">
+                                                <h2 class="d-flex align-items-center mb-0">
+                                                    Native
+                                                </h2>
+                                            </div>
+                                            <div class="col-4 text-right">
+                                                <span>92% <i class="fa fa-arrow-up"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="progress mt-1 " data-height="8" style="height: 8px;">
+                                            <div class="progress-bar l-bg-cyan" role="progressbar" data-width="100%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 92%;"></div>
+                                        </div>
+                                    </div>
+                                    <!-- ---------------- arrow btn menue------------------  -->
+
+                                    <div class="dropdown no-arrow mx-1 position-absolute" style="top:10px; right: 10px;">
+                                        <a role="button" class="text-light dropdown-toggle" id="optionsMenue" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v" style="font-size: 1.5em;"></i></a>
+                                        <ul class="dropdown-list dropdown-menu  shadow animated--grow-in" aria-labelledby="optionsMenue">
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#addSkill">
+                                                    <i class="far fa-edit text-primary"></i>
+                                                    <span class="d-inline-block"> Edit</span>
+                                                </a>
+                                            </li>
+                                            <li class="p-2">
+                                                <a class="dropdown-item" role="button" data-toggle="modal" data-target="#deleteModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                    <span class="d-inline-block"> Delete</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!----- -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /.container-fluid -->
 
 
-                <!-- /.container-fluid -->
+                </div>
+                <!-- End of Main Content -->
 
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Your Website 2021</span>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer -->
 
             </div>
-            <!-- End of Main Content -->
+            <!-- End of Content Wrapper -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
 
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 
 
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+        <!-- Logout Modal-->
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-danger" href="../index.html">Logout</a>
+                    </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-danger" href="../index.html">Logout</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Done Modal -->
+        <div id="DoneModal" class="modal fade">
+            <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="icon-box">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4 class="modal-title w-100">Operation Done</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Custom scripts for all pages-->
-    <script src="assets/js/dashboard_script.js"></script>
+        <!-- Delete Skill Module -->
+
+        <div id="deleteModal" class="modal fade">
+            <div class="modal-dialog modal-confirm">
+                <div class="modal-content">
+                    <div class="modal-header flex-column">
+                        <div class="icon-box">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <h4 class="modal-title w-100">Are you sure?</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Do you really want to delete these records? This process cannot be undone.</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal" data-target="#DoneModal">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Skill Module  -->
+
+        <div class="modal fade show" id="addSkill" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                <div class="modal-content p-3">
+                    <div class="modal-header">
+                        <h4 class="modal-title fw-bold text-center" id="exampleModalLabel">Skills</h4>
+                        <a href="#" data-dismiss="modal">
+                            <i class="far fa-window-close text-danger" style="font-size: 2em;"></i>
+                        </a>
+
+                    </div>
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate="">
+
+                            <section class="py-6 bg-light-primary">
+                                <div class="container">
+                                    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1   ">
+                                        <div class="col-12 my-3">
+                                            <div class="card border-hover-primary hover-scale">
+                                                <div class="card-body">
+                                                    <div class="container mb-3">
+                                                        <div class="contain">
+                                                            <svg x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200">
+                                                          <circle class="" 
+                                                                  stroke="#d1d1d1" 
+                                                                  fill="none" 
+                                                                  stroke-width="3" 
+                                                                  cx="100" cy="100" r="80" />
+                                                          <circle class="path" 
+                                                                  stroke="hotpink" 
+                                                                  fill="none" 
+                                                                  stroke-width="5" 
+                                                                  cx="100" cy="100" r="80" />
+                                                        </svg>
 
 
+                                                            <input id="range" type="range" min="0" max="100" step="1" value="0">
+                                                        </div>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="skillName" class="form-label">Skill Title</label>
+                                                <input type="text" class="form-control rounded-pill" id="skillName" placeholder="Ex. HTML">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="skillCap" class="form-label">Skill Caption</label>
+                                                <input type="text" class="form-control rounded-pill" id="skillCap" placeholder="Ex. Native">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="skillImage" class="form-label">Skill Image</label>
+                                                <input type="file" class="form-control" id="skillImage">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-dismiss="modal" data-toggle="modal" data-target="#DoneModal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="assets/js/dashboard_script.js"></script>
 </body>
 
 </html>
