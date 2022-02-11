@@ -58,40 +58,29 @@ function filterCategory() {
     var categoryValue = $('#categoryFilter').val();
 
 
+    //traversing each row one by one
+    $('.job-item .job-category').each(function() {
+        var textComp = $(this).filter('.job-category').text();
 
-    if (currentFilterdJobs.length > 0 && categoryValue != 0) {
-        $('.job-item').parent().filter(currentFilterdJobs).find('span.job-category').each(function(i, item) {
 
-            if (item.innerText.toLocaleLowerCase() == categoryValue.toLocaleLowerCase()) {
-                $(this).parentsUntil('.job-item').get(-1)
-                    .parentNode.parentNode.style.display = "block";
-                currentFilterdJobs.pop()
-            }
-        });
-
-    } else
-        $('.job-item .job-category').each(function() {
-            var textCat = $(this).filter('.job-category').text();
-            console.log(textCat);
-
-            if (categoryValue == 0) { //if no value then display row
-                categoryFlag = 1;
-            } else if (categoryValue == textCat) {
-                categoryFlag = 1; //if value is same display row
-            } else {
-                categoryFlag = 0;
-            }
+        if (categoryValue == 0) { //if no value then display row
+            categoryFlag = 1;
+        } else if (categoryValue == textComp) {
+            categoryFlag = 1; //if value is same display row
+        } else {
+            categoryFlag = 0;
+        }
 
 
 
-            if (categoryFlag) {
-                $(this).parentsUntil('.job-item').get(-1)
-                    .parentNode.parentNode.style.display = "block"; //displaying row which satisfies all conditions
-                currentFilterdJobs.push($(this).parentsUntil('.job-item').get(-1).parentNode.parentNode);
+        if (categoryFlag) {
+            $(this).parentsUntil('.job-item').get(-1)
+                .parentNode.parentNode.style.display = "block"; //displaying row which satisfies all conditions
+            currentFilterdJobs.push($(this).parentsUntil('.job-item').get(-1).parentNode.parentNode);
 
-            }
+        }
 
-        });
+    });
 }
 
 function filterCompany() {
